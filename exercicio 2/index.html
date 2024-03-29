@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <input type="text" id="inputNumber" placeholder="informe um valor">
+    <button id="Exibir">Exibir</button>
+    <div id='response'></div>
+  </body>
+  
+  <script>
+    
+     const inputNumber = document.getElementById('inputNumber');
+     const btnExibir = document.querySelector('#Exibir');
+     const response = document.querySelector('#response')
+ 
+     btnExibir.addEventListener('click',(e)=>{
+        response.innerHTML = ""
+        e.preventDefault();
+        if(parseInt(inputNumber.value) == 0){
+            response.innerHTML += "Esse valor é uma Fibonacci"
+            return
+        }
+        if(!(isFibonacci( parseInt(inputNumber.value))) ){
+            response.innerHTML = "Esse valor não é Fibonacci";
+            
+        }else{
+            response.innerHTML += "Esse valor é uma Fibonacci"
+        }
+        
+        
+     })
+ 
+     function isFibonacci(number) {
+         let a = 0;
+         let b = 1;
+         let fib = b;
+ 
+         while (fib < number) {
+             fib = a + b;
+             a = b;
+             b = fib;
+         }
+ 
+         return fib === number;
+     }
+  </script>
+</html>
+
+
+
+
