@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Exercicio 4</title>
 </head>
 <body>
-    <input type="text" id="inputText" placeholder="informe um texto">
-    <button id="Exibir">Exibir</button>
-    <div id='response'></div>
+    <div class="container">
+        <input type="text" id="inputText" placeholder="informe um texto">
+        <button id="Exibir">Exibir</button>
+        <div id='response'></div>
+    </div>
   </body>
   
   <script>
@@ -20,12 +23,13 @@
      
 
      btnExibir.addEventListener('click',(e)=>{
+        response.innerHTML = ""
          e.preventDefault();
 
         const text = inputText.value
         let textfinal = "" 
 
-        response.innerHTML += ""
+        
 
         for(let i=1 ; i-1 < text.length; i++){
             textfinal += text[(text.length)-i]
