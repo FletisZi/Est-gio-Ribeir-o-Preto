@@ -69,6 +69,16 @@ f) 2,10, 12, 16, 17, 18, 19, ____
 Resposta: **9 , 128, 49, 100, 13, 200**
 
 
+## Questão 4
+
+Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em uma sala diferente. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+
+Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+Resposta: Para resolução dessa questão vamos abstrair da seguinte forma: existe os interruptores **A, B e C** e também exite as lampadas **A, B e C**. 
+
+Na primeira ação ligaria o interruptor **A** por 5 min e depois delisgaria o mesmo, em seguida ligaria o interruptor **B**, e iria na sala da lampada **A** caso não etivesse ligado iria com a mão verificar se está quente e dessa forma resolveria, pois a sala que tiver com a lampada quente é referente ao interruptor **A** e a sala que lampada estiver acesa é referente ao interruptor **B** e por fim a sala que não tiver lamapda acesa ou quente é referente a interruptor **C** que não foi acionado nem um vez; 
+
 ## Questão 5
 
 Escreva um programa que inverta os caracteres de um string.
